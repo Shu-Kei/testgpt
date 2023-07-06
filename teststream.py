@@ -11,6 +11,7 @@ from streamlit_chat import message
 import os
 import base64
 from langdetect import detect
+api_key = os.environ.get('123')
 def texttospeech(text,language):
     output = gTTS(text,lang=language, slow=False)
     output.save("output.mp3")
@@ -29,7 +30,7 @@ def autoplay_audio(file_path: str):
             unsafe_allow_html=True,
         )    
  
-llm = ChatOpenAI(openai_api_key="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",temperature=0.0)
+llm = ChatOpenAI(openai_api_key=api_key,temperature=0.0)
 r = sr.Recognizer()
 
 if "memory" not in st.session_state:
