@@ -1,0 +1,8 @@
+openai
+numpy
+langchain
+streamlit_chat
+audio_recorder_streamlit
+SpeechRecognition
+gtts
+langdetect
