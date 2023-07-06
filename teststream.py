@@ -11,7 +11,7 @@ from streamlit_chat import message
 import os
 import base64
 from langdetect import detect
-api_key = os.environ.get('API_KEY')
+api_key = os.secrets.API_KEY
 def texttospeech(text,language):
     output = gTTS(text,lang=language, slow=False)
     output.save("output.mp3")
