@@ -29,7 +29,7 @@ def autoplay_audio(file_path: str):
             unsafe_allow_html=True,
         )    
  
-llm = ChatOpenAI(openai_api_key="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",temperature=0.0)
+llm = ChatOpenAI(openai_api_key="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",temperature=0.0)
 r = sr.Recognizer()
 
 if "memory" not in st.session_state:
